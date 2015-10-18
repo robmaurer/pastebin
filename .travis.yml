@@ -8,6 +8,7 @@ env:
   - DB=mysql
 
 before_script:
+  - chmod +x ./app/Console/cake
   - composer self-update
   - composer install
   - mysql -e 'CREATE DATABASE test_database_name;'
